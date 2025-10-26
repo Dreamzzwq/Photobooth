@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Photobooth</h1>
+    <div class="controls">
+      <input type="file" id="photoInput" accept="image/*" capture="environment">
+      <button id="captureBtn">Ambil Foto</button>
+      <button id="addFrameBtn">Tambah Frame</button>
+      <input type="file" id="frameInput" accept="image/png" style="display:none">
+      <select id="frameSelect"></select>
+      <button id="downloadBtn">Download & QR</button>
+    </div>
+    <div class="preview">
+      <canvas id="canvas" width="2953px" height="8268px"></canvas>
+    </div>
+    <div id="qrContainer"></div>
+  </div>
+  <center>
+  <video id="video" autoplay playsinline></video>
+  </center>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
