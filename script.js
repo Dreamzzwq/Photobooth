@@ -12,7 +12,6 @@ const qrContainer = document.getElementById('qrContainer');
 let photos = [];
 let currentFrame = null;
 
-// Load default frame
 const defaultFrame = new Image();
 defaultFrame.src = 'frame-spotify.png';
 defaultFrame.onload = () => {
@@ -20,7 +19,6 @@ defaultFrame.onload = () => {
   drawPreview();
 };
 
-// Load saved frames from localStorage
 let savedFrames = JSON.parse(localStorage.getItem('frames') || '[]');
 updateFrameList();
 
