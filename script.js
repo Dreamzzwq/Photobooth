@@ -14,7 +14,7 @@ let currentFrame = null;
 
 // Load default frame
 const defaultFrame = new Image();
-defaultFrame.src = 'frame 1.png';
+defaultFrame.src = 'frame-spotify.png';
 defaultFrame.onload = () => {
   currentFrame = defaultFrame;
   drawPreview();
